@@ -69,7 +69,7 @@ npm install
 npm run dev
 ```
 
-http://localhost:3000 에서 확인
+(http://whatdoisa.github.io/iOS-Portfolio/) 에서 확인
 
 ### 빌드
 ```bash
@@ -110,7 +110,7 @@ npm start
 
 ### 4. Projects Section
 - 카테고리 필터 (전체/iOS/Web)
-- 6개 프로젝트 (iOS 4개, Web 2개)
+- 6개 프로젝트 (iOS 8개, Web 2개)
 - 각 프로젝트마다 "Web 연계" 강조
 
 ### 5. Contact Section
@@ -173,12 +173,6 @@ git commit -m "Initial commit: iOS Developer Portfolio"
 git remote add origin [your-repo-url]
 git push -u origin main
 ```
-
-### 2. Vercel 연결
-1. [Vercel](https://vercel.com) 로그인
-2. "New Project" 클릭
-3. GitHub 레포지토리 선택
-4. 자동 배포 완료
 
 ## 📈 향후 개선 사항
 
