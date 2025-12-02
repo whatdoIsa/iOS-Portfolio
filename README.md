@@ -69,7 +69,7 @@ npm install
 npm run dev
 ```
 
-(http://whatdoisa.github.io/iOS-Portfolio/) 에서 확인
+http://whatdoisa.github.io/iOS-Portfolio/ 에서 확인
 
 ### 빌드
 ```bash
