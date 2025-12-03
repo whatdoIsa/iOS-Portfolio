@@ -160,10 +160,10 @@ export default function Resume() {
       </div>
 
       {/* Print Button - Hidden in print */}
-      <div className="fixed top-4 right-4 print:hidden">
+      <div className="fixed top-20 right-4 print:hidden">
         <button
           onClick={() => window.print()}
-          className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow-lg font-medium transition-colors"
+          className="bg-gradient-to-r from-ios-blue via-ios-purple to-ios-pink text-white px-6 py-3 rounded-full shadow-lg font-medium transition-all duration-300 hover:shadow-xl hover:scale-105 active:scale-95"
         >
           PDF로 저장
         </button>
