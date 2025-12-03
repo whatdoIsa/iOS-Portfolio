@@ -26,7 +26,10 @@ export default function Navbar() {
     { name: 'Contact', href: '#contact' },
   ];
 
-  const resumeLink = { name: 'Resume', href: '/iOS-Portfolio/resume' };
+  const resumeLink = {
+    name: 'Resume',
+    href: `${process.env.NODE_ENV === 'production' ? '/iOS-Portfolio' : ''}/resume`
+  };
 
   return (
     <motion.nav

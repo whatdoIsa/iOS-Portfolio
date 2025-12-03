@@ -2,7 +2,6 @@
 
 import { FaEnvelope, FaGithub, FaLinkedin, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 import { projects } from '@/data/projects';
-import Image from 'next/image';
 
 export default function Resume() {
   const iosProjects = projects.filter(p => p.category === 'iOS').slice(0, 4);
@@ -17,13 +16,10 @@ export default function Resume() {
             {/* Profile Image */}
             <div className="flex-shrink-0">
               <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-gray-800 shadow-lg">
-                <Image
-                  src="/iOS-Portfolio/images/profile.jpg"
+                <img
+                  src={`${process.env.NODE_ENV === 'production' ? '/iOS-Portfolio' : ''}/images/profile.jpg`}
                   alt="Dean 정송헌"
-                  width={128}
-                  height={128}
                   className="object-cover w-full h-full"
-                  priority
                 />
               </div>
             </div>
