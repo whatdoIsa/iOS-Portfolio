@@ -2,6 +2,7 @@
 
 import { FaEnvelope, FaGithub, FaLinkedin, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 import { projects } from '@/data/projects';
+import Image from 'next/image';
 
 export default function Resume() {
   const iosProjects = projects.filter(p => p.category === 'iOS').slice(0, 4);
@@ -12,8 +13,27 @@ export default function Resume() {
       <div className="max-w-4xl mx-auto p-8 print:p-12">
         {/* Header */}
         <header className="mb-8 border-b-2 border-gray-800 pb-6">
-          <h1 className="text-4xl font-bold mb-2">정송헌 (Dean)</h1>
-          <p className="text-xl text-gray-700 mb-4">iOS Developer with Web Frontend Background</p>
+          <div className="flex items-start gap-6 mb-4">
+            {/* Profile Image */}
+            <div className="flex-shrink-0">
+              <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-gray-800 shadow-lg">
+                <Image
+                  src="/iOS-Portfolio/images/profile.jpg"
+                  alt="Dean 정송헌"
+                  width={128}
+                  height={128}
+                  className="object-cover w-full h-full"
+                  priority
+                />
+              </div>
+            </div>
+
+            {/* Name and Title */}
+            <div className="flex-1">
+              <h1 className="text-4xl font-bold mb-2">정송헌 (Dean)</h1>
+              <p className="text-xl text-gray-700 mb-4">iOS Developer with Web Frontend Background</p>
+            </div>
+          </div>
 
           <div className="flex flex-wrap gap-4 text-sm">
             <div className="flex items-center gap-2">
