@@ -8,7 +8,7 @@ export default function Resume() {
   const webProjects = projects.filter(p => p.category === 'Web');
 
   return (
-    <div className="min-h-screen bg-white text-black print:bg-white">
+    <div className="min-h-screen bg-white text-black print:bg-white pt-20 print:pt-0">
       <div className="max-w-4xl mx-auto p-8 print:p-12">
         {/* Header */}
         <header className="mb-8 border-b-2 border-gray-800 pb-6">
