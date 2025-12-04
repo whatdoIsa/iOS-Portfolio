@@ -89,10 +89,17 @@ export default function Resume() {
         {/* Summary */}
         <section className="mb-8 page-break-avoid">
           <h2 className="text-2xl font-bold mb-4 border-b border-gray-300 pb-2">Summary</h2>
+          <p className="text-gray-800 leading-relaxed mb-3">
+            2024년 웹 프론트엔드 개발을 시작해 React/TypeScript 기반 풀스택 프로젝트를 완성한 후,
+            2025년 Apple Developer Academy를 통해 iOS 개발로 전환했습니다.
+            6개월 만에 App Store에 2개 앱을 출시하고 평균 평점 5.0을 유지하며,
+            총 8개의 iOS 앱과 2개의 웹 프로젝트를 완성했습니다.
+          </p>
           <p className="text-gray-800 leading-relaxed">
-            React와 Vue.js 웹 프론트엔드 경험을 바탕으로 SwiftUI와 UIKit iOS 개발을 빠르게 습득한 T자형 개발자입니다.
-            선언형 UI 패턴에 대한 깊은 이해를 통해 웹과 모바일 간의 개념을 자연스럽게 전환하며,
-            Apple Developer Academy에서 8개의 iOS 앱과 2개의 웹 프로젝트를 완성했습니다.
+            <span className="font-semibold">주요 성과:</span> 600+ commits의 활발한 개발 활동 |
+            Apple Indoor Map 국내 최초 승인 및 개발 사례 |
+            Junction 2025 해커톤 참여 |
+            온디바이스 AI 및 위치 기반 서비스 구현 경험
           </p>
         </section>
 
