@@ -20,11 +20,9 @@ export const projects = [
     duration: '2025.09 - 2025.11',
     role: 'iOS Developer (팀 프로젝트 - 6인 / 개발 담당)',
     highlights: [
-      '⭐ App Store 출시 (평점 5.0)',
-      '실내 지도 전체 기능 담당 개발',
-      'Apple Maps의 Indoor Map 승인 및 개발 국내 최초 사례',
-      'Apple Developer Academy @ POSTECH Challenge 6',
-      '5회 업데이트로 지속적 개선 (v1.2.2)'
+      'Problem: 쇼케이스 행사에서 참가자들이 실내 동선, 부스 위치, 세션 정보를 찾기 어려워 안내 인력에 부담이 커지고 행사 경험이 분산되는 문제가 있었다.',
+      'Action: 실내 공간을 층/존/부스 단위로 데이터 모델링하고 MapKit과 Indoor Positioning으로 실내 내비게이션을 설계했다. 검색 UX와 필터를 반복적으로 개선하고, 한국어/영어 Localization을 기획·디자인 담당자와 협업하며 지속적으로 다듬었다.',
+      'Result: 참가자들이 앱으로 부스와 세션을 탐색했고 "위치 안내 문의가 줄었다"는 피드백을 받았다. Apple Indoor Map 승인까지 연결되며 실내 내비게이션 도메인에 대한 이해를 갖추게 되었다.'
     ]
   },
   {
@@ -48,10 +46,9 @@ export const projects = [
     duration: '2025.09 - 2025.11',
     role: 'iOS Developer (팀 프로젝트 - 6인 / 개발 3인 중 1인)',
     highlights: [
-      '⭐ App Store 출시 (평점 5.0)',
-      '전반적인 iOS 개발에 참여',
-      'Apple Developer Academy @ POSTECH Challenge 6',
-      'Apple Intelligence 활용한 온디바이스 AI 구현'
+      'Problem: 스크린샷이 계속 쌓이면서 필요한 정보를 다시 찾기 어렵고, 클라우드 기반 AI 서비스는 개인정보·프라이버시 이슈로 사용을 망설이게 된다는 피드백이 있었다.',
+      'Action: CoreML + Vision 기반 온디바이스 분류 파이프라인을 설계하고 카테고리 기준을 정의했다. SwiftUI 기반 UI로 분류 결과를 즉시 확인·수정할 수 있게 하고, 모든 추론을 디바이스 안에서 처리해 프라이버시 중심 아키텍처를 유지했다.',
+      'Result: "스크린샷 정리 시간이 줄었다", "서버로 올리지 않아 안심된다"는 피드백을 받아 분류 카테고리와 UI를 추가 개선했다. 온디바이스 AI를 실제 사용자 시나리오에 적용하며 성능·프라이버시·UX를 함께 고려하는 설계 감각을 키웠다.'
     ]
   },
   {
@@ -75,9 +72,9 @@ export const projects = [
     duration: '2025.04 - 2025.06',
     role: 'iOS Developer (개인 프로젝트)',
     highlights: [
-      'SwiftUI의 선언형 UI로 사용자 경험 최적화',
-      'CoreData를 활용한 로컬 데이터 영속성',
-      'Apple Developer Academy 4기 프로젝트'
+      'Problem: 일기 앱은 글을 길게 써야 해서 부담스럽고, 감정만 체크하는 앱은 "왜 그런 감정을 느꼈는지" 떠올리기 어렵다는 문제가 있었다.',
+      'Action: "하루 한 번, 짧은 질문 + 감정 선택" 구조로 진입 장벽을 낮춘 UX를 만들고, 로컬 저장 방식으로 사적인 기록이 밖으로 나가지 않도록 했다. 테스트 사용자 피드백을 반영해 UI를 여러 번 다듬었다.',
+      'Result: "짧게라도 꾸준히 쓰니 내 감정 패턴이 보인다"는 피드백을 받았고, 로컬 데이터 기반 감정 회고 앱의 UX를 설계·구현한 경험을 쌓았다.'
     ]
   },
   {
@@ -99,8 +96,9 @@ export const projects = [
     duration: '2025.06 - 2025.08',
     role: 'iOS Developer (개인 프로젝트)',
     highlights: [
-      'Swift 네이티브 개발 역량 강화',
-      'Xcode 환경에 대한 깊은 이해'
+      'Problem: macOS에서 여러 윈도우를 띄워 작업할 때 일일이 드래그로 위치와 크기를 조정해야 하고, 기본 분할 기능만으로는 원하는 레이아웃을 빠르게 만들기 어려웠다.',
+      'Action: SwiftUI 기반 macOS 앱으로 화면을 여러 영역으로 나누는 기능을 구현하고, 자주 사용하는 패턴을 프리셋으로 제공해 단축키로 윈도우를 원하는 레이아웃에 맞게 이동·리사이즈할 수 있도록 설계했다.',
+      'Result: Drag & Drop에 쓰던 시간을 줄이고 일관된 레이아웃으로 작업할 수 있게 되었다. macOS 환경에 맞는 윈도우 관리 UX와 SwiftUI 기반 데스크톱 앱 설계 경험을 쌓았다.'
     ]
   },
   {
@@ -125,10 +123,9 @@ export const projects = [
     duration: '2025 (Junction Hackathon)',
     role: 'iOS Developer (팀 프로젝트 / 개발 담당)',
     highlights: [
-      'Junction 2025 해커톤 프로젝트',
-      'Azure AI 연동 산불 데이터 분석',
-      '실시간 위치 기반 커뮤니티 알림 구현',
-      '경상북도 산불 대응 문제 해결'
+      'Problem: 산불 정보는 여러 채널에 흩어져 있어 "지금 내가 있는 곳이 위험한지" 직관적으로 알기 어려웠다.',
+      'Action: FIRMS 위성 데이터와 Azure 기반 AI 예측 API를 연동해 지역별 산불 위험도를 지도 위에 시각화하고, 사용자가 직접 제보할 수 있도록 신고 플로우를 만들었다. Junction 해커톤 특성상 짧은 시간 안에 SwiftUI 기반 최소 기능(MVP)에 집중해 빠른 프로토타입을 완성했다.',
+      'Result: 해커톤 데모에서 데이터·AI·지도 UI를 결합한 서비스 가능성을 보여줬고, "실제 현장 적용이 떠오르는 아이디어"라는 피드백을 받았다. 여러 외부 API를 짧은 시간 안에 통합하며 데이터 파이프라인 설계와 SwiftUI 상태 관리 역량을 키웠다.'
     ]
   },
   {
@@ -151,9 +148,9 @@ export const projects = [
     duration: '2025.09',
     role: 'iOS Developer (팀 프로젝트 / 개발 담당)',
     highlights: [
-      '130+ commits의 활발한 개발 활동',
-      '4명의 개발자와 협업',
-      'Screen Time API 활용 경험',
+      'Problem: 자기 전 스마트폰 사용이 길어져 수면 시간이 계속 밀리는 문제를 많은 사람들이 겪고 있었다.',
+      'Action: Screen Time API를 활용해 특정 시간 이후 앱 사용을 제한하고, 수면 목표와 실제 사용 패턴을 Swift Charts로 시각화했다. "너무 강하게 막히면 스트레스"라는 피드백을 반영해 점진적 제안·알림 위주의 UX로 조정했다.',
+      'Result: "자정 이후 화면 사용이 줄었다", "그래프를 보니 스스로 조절해야겠다는 생각이 든다"는 피드백을 받았다. 단순 차단이 아니라 행동 변화를 유도하는 UX와 데이터 피드백의 균형을 고민한 경험을 얻었다.'
     ]
   },
   {
@@ -177,10 +174,9 @@ export const projects = [
     duration: '2025.07 - 2025.08',
     role: 'iOS Developer (팀 프로젝트 / 개발 담당)',
     highlights: [
-      'Apple Developer Academy @ POSTECH Challenge 4',
-      '215+ commits의 체계적인 개발 진행',
-      'MapKit을 활용한 위치 기반 기능 구현',
-      'PencilKit과 MapKit을 합쳐 지도 위에 그림을 그리는 경험 구현'
+      'Problem: 여행 계획을 세울 때 지도, 메모, 일정이 각각 다른 앱에 흩어져 있어 "어디를 어떤 동선으로 돌지" 한 번에 보기 어려웠다.',
+      'Action: MapKit + PencilKit을 결합해 지도 위에 직접 원·영역을 그려 여행 범위를 시각적으로 표시하고, Plan / Bookmark를 분리해 일정과 저장 장소를 나누어 관리하도록 했다. MVVM 아키텍처로 지도 상태, 그리기 데이터, 일정 정보를 분리 설계하고 Firebase를 연동했다.',
+      'Result: "지도를 보면서 그날의 동선을 직관적으로 계획할 수 있다"는 점에서 기존 리스트 기반 플래너와 다른 경험을 제공했다. 지도·드로잉·일정 관리가 결합된 복합 도메인을 다루며 상태 관리와 데이터 모델링 역량을 강화했다.'
     ]
   },
   {
@@ -203,10 +199,9 @@ export const projects = [
     duration: '2025.06 - 2025.07',
     role: 'Project Manager (팀 프로젝트 - 3인 / PM 담당)',
     highlights: [
-      'Apple Developer Academy @ POSTECH Challenge 3',
-      'PM으로서 프로젝트 전체 기획 및 관리',
-      '185+ commits의 활발한 개발',
-      '위치 기반 게임 메커니즘 설계 경험'
+      'Problem: 운동이 필요하다는 것을 알면서도 "운동은 재미없고 귀찮은 것"이라는 인식 때문에 시작 자체를 어려워하는 사용자가 많았다.',
+      'Action: MapKit + CoreLocation으로 사용자가 실제로 걸은 영역을 지도 위에 색칠하고, 일정 면적을 차지하면 "영역을 점령했다"는 피드백을 주는 게임 메커닉을 설계했다. Game Center 연동으로 랭킹 시스템을 구현하고, "짧은 미션" 형식으로 목표를 쪼개 UX를 다듬었다.',
+      'Result: "운동하러 나간다기보다는 게임을 하러 나가는 느낌"이라는 피드백과 함께 실제로 이동 거리와 활동 시간이 늘어나는 결과를 확인했다. 헬스케어/운동 도메인에서 동기부여 UX와 위치 기반 게임 메커닉을 설계한 경험을 얻었다.'
     ]
   },
   {
@@ -230,9 +225,9 @@ export const projects = [
     duration: '2024.06',
     role: 'Full-stack Developer (개인 프로젝트)',
     highlights: [
-      'Remix.js V2를 활용한 생산성 높은 개발',
-      'TypeScript로 타입 안정성 확보',
-      '외부 API 통합 경험'
+      'Problem: 카페를 좋아하는 사용자들이 "체인점이 아닌 분위기 좋은 카페"를 찾고 싶어 하지만, 지도 앱 기본 검색만으로는 원하는 분위기·리뷰를 반영하기 어려웠다.',
+      'Action: Kakao Map API를 연동해 지도 위에서 카페를 검색하고 필터에 따라 정렬할 수 있는 기능을 구현했다. TypeScript + React + Remix + Prisma 스택으로 카페 정보·리뷰·즐겨찾기를 데이터베이스에 저장하고, 모바일·데스크톱 반응형 UI를 설계했다.',
+      'Result: "지도에서 카페 위치와 리뷰를 함께 보니 고르는 과정이 재밌다"는 피드백을 얻었다. 이 프로젝트의 위치 기반 검색·지도 경험은 이후 MapKit을 활용한 iOS 프로젝트(Show(X), Rootrip 등)를 구현하는 데 직접적인 기반이 되었다.'
     ]
   },
   {
@@ -255,9 +250,9 @@ export const projects = [
     duration: '2024.04',
     role: 'Frontend Developer (개인 프로젝트)',
     highlights: [
-      'React 컴포넌트 재사용성 이해',
-      'Vite 빌드 도구 경험',
-      'Zerobase 프론트엔드 스쿨 프로젝트'
+      'Problem: React를 학습하면서 상태 관리, 라우팅, 컴포넌트 설계 패턴을 실제 서비스 형태로 연습할 수 있는 프로젝트가 필요했다.',
+      'Action: React + Vite + Tailwind CSS로 상품 리스트, 상세 페이지, 장바구니, 필터/정렬 기능을 가진 쇼핑몰 형태의 웹 앱을 구현했다. 컴포넌트를 작은 단위로 나누어 재사용성을 높이고, props 전달 구조와 전역 상태 관리를 실습했다.',
+      'Result: React의 컴포넌트·상태 관리 개념을 실제 서비스 흐름에 적용해 볼 수 있었고, 이후 SwiftUI View 구조와 상태 관리를 이해하는 데 큰 도움을 받았다. 웹에서 쌓은 선언형 UI 경험을 iOS 쪽으로 자연스럽게 확장할 수 있었다.'
     ]
   }
 ];
