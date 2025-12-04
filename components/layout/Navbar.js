@@ -18,17 +18,19 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const basePath = process.env.NODE_ENV === 'production' ? '/iOS-Portfolio' : '';
+
   const navLinks = [
-    { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Code Compare', href: '#compare' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'About', href: `${basePath}/#about` },
+    { name: 'Skills', href: `${basePath}/#skills` },
+    { name: 'Code Compare', href: `${basePath}/#compare` },
+    { name: 'Projects', href: `${basePath}/#projects` },
+    { name: 'Contact', href: `${basePath}/#contact` },
   ];
 
   const resumeLink = {
     name: 'Resume',
-    href: `${process.env.NODE_ENV === 'production' ? '/iOS-Portfolio' : ''}/resume`
+    href: `${basePath}/resume`
   };
 
   return (
@@ -46,7 +48,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* 로고 */}
           <motion.a
-            href="#"
+            href={`${basePath}/`}
             className="text-xl font-bold"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
