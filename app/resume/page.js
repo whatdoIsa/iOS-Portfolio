@@ -2,19 +2,42 @@
 
 import { FaEnvelope, FaGithub, FaLinkedin, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 import { projects } from '@/data/projects';
+import { useRef } from 'react';
 
 export default function Resume() {
   const iosProjects = projects.filter(p => p.category === 'iOS').slice(0, 4);
   const webProjects = projects.filter(p => p.category === 'Web');
+  const resumeRef = useRef(null);
 
-  const handleDownloadPDF = () => {
-    // 브라우저의 인쇄 대화상자를 열고, 사용자가 "PDF로 저장" 옵션을 선택할 수 있도록 함
-    window.print();
+  const handleDownloadPDF = async () => {
+    // 동적으로 html2pdf 라이브러리 로드 (클라이언트 사이드에서만 실행)
+    if (typeof window !== 'undefined') {
+      const html2pdf = (await import('html2pdf.js')).default;
+
+      const element = resumeRef.current;
+      const opt = {
+        margin: [10, 10, 10, 10],
+        filename: 'Resume_정송헌_Dean.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: {
+          scale: 2,
+          useCORS: true,
+          logging: false
+        },
+        jsPDF: {
+          unit: 'mm',
+          format: 'a4',
+          orientation: 'portrait'
+        }
+      };
+
+      html2pdf().set(opt).from(element).save();
+    }
   };
 
   return (
-    <div className="min-h-screen bg-white text-black print:bg-white pt-20 print:pt-0">
-      <div className="max-w-4xl mx-auto p-8 print:p-12">
+    <div className="min-h-screen bg-white text-black pt-20">
+      <div ref={resumeRef} className="max-w-4xl mx-auto p-8">
         {/* Header */}
         <header className="mb-8 border-b-2 border-gray-800 pb-6">
           <div className="flex items-start gap-6 mb-4">
@@ -160,16 +183,16 @@ export default function Resume() {
         {/* Footer */}
         <footer className="mt-12 pt-6 border-t border-gray-300 text-center text-sm text-gray-600">
           <p>포트폴리오: <a href="https://whatdoisa.github.io/iOS-Portfolio/" className="text-blue-600 hover:underline">whatdoisa.github.io/iOS-Portfolio</a></p>
-          <p className="mt-2 print:hidden">💡 우측 상단의 "PDF로 저장" 버튼을 클릭하면 인쇄 대화상자가 열립니다. 대상을 "PDF로 저장"으로 선택하세요.</p>
+          <p className="mt-2">💡 우측 상단의 "PDF로 저장" 버튼을 클릭하면 바로 PDF 파일이 다운로드됩니다.</p>
         </footer>
       </div>
 
-      {/* PDF Download Button - Hidden in print */}
-      <div className="fixed top-20 right-4 print:hidden">
+      {/* PDF Download Button */}
+      <div className="fixed top-20 right-4">
         <button
           onClick={handleDownloadPDF}
           className="bg-gradient-to-r from-ios-blue via-ios-purple to-ios-pink text-white px-6 py-3 rounded-full shadow-lg font-medium transition-all duration-300 hover:shadow-xl hover:scale-105 active:scale-95"
-          title="이 페이지를 PDF로 저장합니다. 인쇄 대화상자에서 '대상'을 'PDF로 저장'으로 선택하세요."
+          title="클릭하면 바로 PDF 파일이 다운로드됩니다"
         >
           PDF로 저장
         </button>
