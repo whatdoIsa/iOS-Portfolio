@@ -7,6 +7,11 @@ export default function Resume() {
   const iosProjects = projects.filter(p => p.category === 'iOS').slice(0, 4);
   const webProjects = projects.filter(p => p.category === 'Web');
 
+  const handleDownloadPDF = () => {
+    // 브라우저의 인쇄 대화상자를 열고, 사용자가 "PDF로 저장" 옵션을 선택할 수 있도록 함
+    window.print();
+  };
+
   return (
     <div className="min-h-screen bg-white text-black print:bg-white pt-20 print:pt-0">
       <div className="max-w-4xl mx-auto p-8 print:p-12">
@@ -155,15 +160,16 @@ export default function Resume() {
         {/* Footer */}
         <footer className="mt-12 pt-6 border-t border-gray-300 text-center text-sm text-gray-600">
           <p>포트폴리오: <a href="https://whatdoisa.github.io/iOS-Portfolio/" className="text-blue-600 hover:underline">whatdoisa.github.io/iOS-Portfolio</a></p>
-          <p className="mt-2">이 문서는 웹에서 인쇄하여 PDF로 저장할 수 있습니다 (Ctrl/Cmd + P)</p>
+          <p className="mt-2 print:hidden">💡 우측 상단의 "PDF로 저장" 버튼을 클릭하면 인쇄 대화상자가 열립니다. 대상을 "PDF로 저장"으로 선택하세요.</p>
         </footer>
       </div>
 
-      {/* Print Button - Hidden in print */}
+      {/* PDF Download Button - Hidden in print */}
       <div className="fixed top-20 right-4 print:hidden">
         <button
-          onClick={() => window.print()}
+          onClick={handleDownloadPDF}
           className="bg-gradient-to-r from-ios-blue via-ios-purple to-ios-pink text-white px-6 py-3 rounded-full shadow-lg font-medium transition-all duration-300 hover:shadow-xl hover:scale-105 active:scale-95"
+          title="이 페이지를 PDF로 저장합니다. 인쇄 대화상자에서 '대상'을 'PDF로 저장'으로 선택하세요."
         >
           PDF로 저장
         </button>
