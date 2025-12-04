@@ -197,7 +197,7 @@ export default function Resume() {
         {/* Footer */}
         <footer className="mt-12 pt-6 border-t border-gray-300 text-center text-sm text-gray-600">
           <p>포트폴리오: <a href="https://whatdoisa.github.io/iOS-Portfolio/" className="text-blue-600 hover:underline">whatdoisa.github.io/iOS-Portfolio</a></p>
-          <p className="mt-2">💡 우측 상단의 "PDF로 저장" 버튼을 클릭하면 바로 PDF 파일이 다운로드됩니다.</p>
+          <p className="mt-2">우측 상단의 "PDF로 저장" 버튼을 클릭하면 바로 PDF 파일이 다운로드됩니다.</p>
         </footer>
       </div>
 
