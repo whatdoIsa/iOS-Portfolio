@@ -16,18 +16,25 @@ export default function Resume() {
 
       const element = resumeRef.current;
       const opt = {
-        margin: [10, 10, 10, 10],
+        margin: [15, 15, 15, 15],
         filename: 'Resume_정송헌_Dean.pdf',
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: {
           scale: 2,
           useCORS: true,
-          logging: false
+          logging: false,
+          letterRendering: true
         },
         jsPDF: {
           unit: 'mm',
           format: 'a4',
           orientation: 'portrait'
+        },
+        pagebreak: {
+          mode: ['avoid-all', 'css', 'legacy'],
+          before: '.page-break-before',
+          after: '.page-break-after',
+          avoid: '.page-break-avoid'
         }
       };
 
@@ -39,7 +46,7 @@ export default function Resume() {
     <div className="min-h-screen bg-white text-black pt-20">
       <div ref={resumeRef} className="max-w-4xl mx-auto p-8">
         {/* Header */}
-        <header className="mb-8 border-b-2 border-gray-800 pb-6">
+        <header className="mb-8 border-b-2 border-gray-800 pb-6 page-break-avoid">
           <div className="flex items-start gap-6 mb-4">
             {/* Profile Image */}
             <div className="flex-shrink-0">
@@ -80,7 +87,7 @@ export default function Resume() {
         </header>
 
         {/* Summary */}
-        <section className="mb-8">
+        <section className="mb-8 page-break-avoid">
           <h2 className="text-2xl font-bold mb-4 border-b border-gray-300 pb-2">Summary</h2>
           <p className="text-gray-800 leading-relaxed">
             React와 Vue.js 웹 프론트엔드 경험을 바탕으로 SwiftUI와 UIKit iOS 개발을 빠르게 습득한 T자형 개발자입니다.
@@ -90,7 +97,7 @@ export default function Resume() {
         </section>
 
         {/* Skills */}
-        <section className="mb-8">
+        <section className="mb-8 page-break-avoid">
           <h2 className="text-2xl font-bold mb-4 border-b border-gray-300 pb-2">Technical Skills</h2>
           <div className="grid grid-cols-1 gap-3">
             <div>
@@ -109,12 +116,12 @@ export default function Resume() {
         </section>
 
         {/* Experience / Projects */}
-        <section className="mb-8">
+        <section className="mb-8 page-break-before">
           <h2 className="text-2xl font-bold mb-4 border-b border-gray-300 pb-2">Featured Projects</h2>
 
           <div className="space-y-6">
             {iosProjects.map((project, index) => (
-              <div key={project.id} className={index !== iosProjects.length - 1 ? 'border-b border-gray-200 pb-4' : ''}>
+              <div key={project.id} className={`page-break-avoid ${index !== iosProjects.length - 1 ? 'border-b border-gray-200 pb-4' : ''}`}>
                 <div className="flex justify-between items-start mb-2">
                   <h3 className="text-lg font-bold">{project.title}</h3>
                   <span className="text-sm text-gray-600">{project.duration}</span>
@@ -136,10 +143,10 @@ export default function Resume() {
         </section>
 
         {/* Education */}
-        <section className="mb-8">
+        <section className="mb-8 page-break-before">
           <h2 className="text-2xl font-bold mb-4 border-b border-gray-300 pb-2">Education & Training</h2>
           <div className="space-y-4">
-            <div>
+            <div className="page-break-avoid">
               <div className="flex justify-between items-start mb-1">
                 <h3 className="font-bold">Apple Developer Academy @ POSTECH</h3>
                 <span className="text-sm text-gray-600">2025</span>
@@ -152,7 +159,7 @@ export default function Resume() {
               </ul>
             </div>
 
-            <div>
+            <div className="page-break-avoid">
               <div className="flex justify-between items-start mb-1">
                 <h3 className="font-bold">Zerobase 프론트엔드 스쿨</h3>
                 <span className="text-sm text-gray-600">2024</span>
@@ -168,7 +175,7 @@ export default function Resume() {
         </section>
 
         {/* Key Achievements */}
-        <section className="mb-8">
+        <section className="mb-8 page-break-avoid">
           <h2 className="text-2xl font-bold mb-4 border-b border-gray-300 pb-2">Key Achievements</h2>
           <ul className="list-disc list-inside text-gray-800 space-y-2">
             <li>App Store 출시 2개 앱 (Show(X), kip!) - 평점 5.0 유지</li>

@@ -42,6 +42,22 @@
   }
 }
 
+/* PDF Page Break Controls */
+.page-break-avoid {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.page-break-before {
+  page-break-before: always;
+  break-before: page;
+}
+
+.page-break-after {
+  page-break-after: always;
+  break-after: page;
+}
+
 /* iOS 스타일의 부드러운 스크롤 */
 html {
   scroll-behavior: smooth;
