@@ -18,13 +18,20 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const basePath = process.env.NODE_ENV === 'production' ? '/iOS-Portfolio' : '';
+
   const navLinks = [
-    { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Code Compare', href: '#compare' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'About', href: `${basePath}/#about` },
+    { name: 'Skills', href: `${basePath}/#skills` },
+    { name: 'Code Compare', href: `${basePath}/#compare` },
+    { name: 'Projects', href: `${basePath}/#projects` },
+    { name: 'Contact', href: `${basePath}/#contact` },
   ];
+
+  const resumeLink = {
+    name: 'Resume',
+    href: `${basePath}/resume`
+  };
 
   return (
     <motion.nav
@@ -41,7 +48,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* 로고 */}
           <motion.a
-            href="#"
+            href={`${basePath}/`}
             className="text-xl font-bold"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -62,6 +69,14 @@ export default function Navbar() {
                 {link.name}
               </motion.a>
             ))}
+            <motion.a
+              href={resumeLink.href}
+              className="text-ios-gray-600 dark:text-ios-gray-300 hover:text-ios-blue dark:hover:text-ios-blue transition-colors duration-200"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              {resumeLink.name}
+            </motion.a>
           </div>
 
           {/* 모바일 메뉴 버튼 */}
@@ -75,7 +90,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* 모바일 메뉴 (Phase 4에서 구현 예정) */}
+      {/* 모바일 메뉴 */}
       {isMobileMenuOpen && (
         <motion.div
           initial={{ opacity: 0, height: 0 }}
@@ -94,6 +109,13 @@ export default function Navbar() {
                 {link.name}
               </a>
             ))}
+            <a
+              href={resumeLink.href}
+              className="block py-2 text-ios-gray-600 dark:text-ios-gray-300 hover:text-ios-blue transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              {resumeLink.name}
+            </a>
           </div>
         </motion.div>
       )}
