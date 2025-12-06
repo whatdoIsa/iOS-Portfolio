@@ -32,13 +32,13 @@ export const projects = [
     type: 'SwiftUI',
     thumbnail: '/images/projects/kip.jpg',
     description: '온디바이스 AI 기반 스크린샷 자동 정리 생산성 앱. 개인정보 보호를 고려한 로컬 AI 처리.',
-    techStack: ['SwiftUI', 'Apple Intelligence', 'CoreML', 'Vision', 'Notifications'],
+    techStack: ['SwiftUI', 'Apple Intelligence', 'Foundation Model', 'Vision', 'Notifications'],
     features: [
       'Share Sheet 연동 빠른 저장 기능',
       '온디바이스 AI로 날짜/시간/메모 자동 추출',
       '스마트 위치 인식 및 리마인더 알림',
       '개인정보 로컬 처리 (서버 전송 없음)',
-      'App store 생산성 86등'
+      'App store 생산성 66등'
     ],
     webConnection: 'React의 컴포넌트 재사용성 개념을 SwiftUI View Modifier로 확장. 웹 UX 패턴을 네이티브 앱에 적용.',
     github: 'https://github.com/DeveloperAcademy-POSTECH/2025-C6-M9-TNT-Lab',
@@ -48,7 +48,7 @@ export const projects = [
     highlights: [
       'Problem: 테스트 사용자 15명의 평균 스크린샷 저장 개수 300+, 필요한 정보를 찾는 데 평균 5분 소요. 클라우드 AI는 개인정보 우려로 사용 거부율 70%. 저장해둔 정보를 수시로 잊고 놓친 경우가 68%',
       'Action: Apple Intelligence Writing Tools API와 Vision 프레임워크로 온디바이스 이미지 분류 파이프라인을 구현해(전체 개발의 40% 담당) 정확도 85% 달성. SwiftUI Combine으로 비동기 처리 최적화. SwiftData 기반 로컬 저장으로 완전한 프라이버시 보장 아키텍처 설계.',
-      'Result: 테스트 사용자 평균 스크린샷 정리 시간 60% 단축 (5분 → 2분). "서버 전송 없어 안심된다" 만족도 95%. 온디바이스 AI 설계·성능·프라이버시 균형 감각 확보. Apple Intelligence 불가한 경우 대비 Gemini & GPT 도입. App Store 생산성 86등 달성.'
+      'Result: 테스트 사용자 평균 스크린샷 정리 시간 60% 단축 (5분 → 2분). "서버 전송 없어 안심된다" 만족도 95%. 온디바이스 AI 설계·성능·프라이버시 균형 감각 확보. Apple Intelligence 불가한 경우 대비 Gemini & GPT 도입. App Store 생산성 66등 달성.'
     ]
   },
   {
