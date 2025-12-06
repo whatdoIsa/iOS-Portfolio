@@ -166,6 +166,14 @@ export default function Resume() {
           <div className="space-y-4">
             <div className="page-break-avoid">
               <div className="flex justify-between items-start mb-1">
+                <h3 className="font-bold">신라대학교 컴퓨터교육과</h3>
+                <span className="text-sm text-gray-600">2019.03 ~ 2025.02</span>
+              </div>
+              <p className="text-gray-700">학사 학위 | 학점: 3.45/4.5</p>
+            </div>
+
+            <div className="page-break-avoid">
+              <div className="flex justify-between items-start mb-1">
                 <h3 className="font-bold">Apple Developer Academy @ POSTECH</h3>
                 <span className="text-sm text-gray-600">2025.03 ~ 2025.12</span>
               </div>
