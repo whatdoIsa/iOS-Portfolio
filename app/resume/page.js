@@ -167,6 +167,7 @@ export default function Resume() {
             <div className="page-break-avoid">
               <div className="flex justify-between items-start mb-1">
                 <h3 className="font-bold">Apple Developer Academy @ POSTECH</h3>
+
                 <span className="text-sm text-gray-600">2025.03 ~ 2025.12</span>
               </div>
               <p className="text-gray-700">Apple 생태계 관련 개발 집중 교육 프로그램</p>
@@ -180,6 +181,7 @@ export default function Resume() {
             <div className="page-break-avoid">
               <div className="flex justify-between items-start mb-1">
                 <h3 className="font-bold">Zerobase 프론트엔드 스쿨</h3>
+
                 <span className="text-sm text-gray-600">2024.02 ~ 2024.09</span>
               </div>
               <p className="text-gray-700">React, TypeScript 기반 웹 개발 교육</p>
