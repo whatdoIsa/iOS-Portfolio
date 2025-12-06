@@ -62,7 +62,7 @@ export default function Resume() {
             {/* Name and Title */}
             <div className="flex-1">
               <h1 className="text-4xl font-bold mb-2">정송헌 (Dean)</h1>
-              <p className="text-xl text-gray-700 mb-4">iOS Developer with Web Frontend Background</p>
+              <p className="text-xl text-gray-700 mb-4">사용자의 일상에 스며드는 ‘쓰게 되는 앱’을 만드는 iOS 개발자</p>
             </div>
           </div>
 
@@ -91,14 +91,14 @@ export default function Resume() {
           <h2 className="text-2xl font-bold mb-4 border-b border-gray-300 pb-2">Summary</h2>
           <p className="text-gray-800 leading-relaxed mb-3">
             2024년 웹 프론트엔드 개발을 시작해 React/TypeScript 기반 풀스택 프로젝트를 완성한 후,
-            2025년 Apple Developer Academy를 통해 iOS 개발로 전환했습니다.
-            6개월 만에 App Store에 2개 앱을 출시하고 평균 평점 5.0을 유지하며,
+            2025년 Apple Developer Academy @POSTECH를 통해 iOS 개발로 전환했습니다.
+            6개월 만에 App Store에 개인앱 2개 팀 프로젝트 앱 2개를 출시하고,
             총 8개의 iOS 앱과 2개의 웹 프로젝트를 완성했습니다.
           </p>
           <p className="text-gray-800 leading-relaxed">
-            <span className="font-semibold">주요 성과:</span> 600+ commits의 활발한 개발 활동 |
+            <span className="font-semibold">주요 성과:</span> SwiftUI와 UIKit 기반 iOS 앱 8개 개발 |
             Apple Indoor Map 국내 최초 승인 및 개발 사례 |
-            Junction 2025 해커톤 참여 |
+            Mac OS 윈도우 관리 서비스 구현 경험 |
             온디바이스 AI 및 위치 기반 서비스 구현 경험
           </p>
         </section>
@@ -109,7 +109,7 @@ export default function Resume() {
           <div className="grid grid-cols-1 gap-3">
             <div>
               <span className="font-semibold">iOS Development:</span>
-              <span className="ml-2 text-gray-700">Swift, SwiftUI, UIKit, MapKit, CoreData, HealthKit, Apple Intelligence</span>
+              <span className="ml-2 text-gray-700">SwiftUI, UIKit, MapKit, Foundation Model, AppKit, Face ID, Swift Data, Apple Intelligence</span>
             </div>
             <div>
               <span className="font-semibold">Web Frontend:</span>
@@ -140,9 +140,20 @@ export default function Resume() {
                   <span className="text-sm text-gray-700">{project.techStack.join(', ')}</span>
                 </div>
                 <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
-                  {project.highlights.slice(0, 3).map((highlight, idx) => (
-                    <li key={idx}>{highlight}</li>
-                  ))}
+                  {project.highlights.slice(0, 3).map((highlight, idx) => {
+                    // Problem:, Action:, Result: 부분을 굵게 표시
+                    const parts = highlight.split(/(:)/);
+                    const label = parts[0]; // Problem, Action, Result
+                    const colon = parts[1]; // :
+                    const content = parts.slice(2).join(''); // 나머지 내용
+
+                    return (
+                      <li key={idx}>
+                        <span className="font-bold text-base">{label}{colon}</span>
+                        {content}
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             ))}
@@ -156,9 +167,9 @@ export default function Resume() {
             <div className="page-break-avoid">
               <div className="flex justify-between items-start mb-1">
                 <h3 className="font-bold">Apple Developer Academy @ POSTECH</h3>
-                <span className="text-sm text-gray-600">2025</span>
+                <span className="text-sm text-gray-600">2025.03 ~ 2025.12</span>
               </div>
-              <p className="text-gray-700">iOS 앱 개발 및 디자인 집중 교육 프로그램</p>
+              <p className="text-gray-700">Apple 생태계 관련 개발 집중 교육 프로그램</p>
               <ul className="list-disc list-inside text-sm text-gray-700 mt-2">
                 <li>6개의 Challenge 프로젝트 완성 (Show(X), kip!, Rootrip, WAY GYM 등)</li>
                 <li>SwiftUI, UIKit, MapKit, Apple Intelligence 활용 앱 개발</li>
@@ -169,13 +180,13 @@ export default function Resume() {
             <div className="page-break-avoid">
               <div className="flex justify-between items-start mb-1">
                 <h3 className="font-bold">Zerobase 프론트엔드 스쿨</h3>
-                <span className="text-sm text-gray-600">2024</span>
+                <span className="text-sm text-gray-600">2024.02 ~ 2024.09</span>
               </div>
               <p className="text-gray-700">React, TypeScript 기반 웹 개발 교육</p>
               <ul className="list-disc list-inside text-sm text-gray-700 mt-2">
                 <li>React 컴포넌트 기반 아키텍처 학습</li>
-                <li>TypeScript를 활용한 타입 안정성 확보</li>
-                <li>Modern JavaScript (ES6+) 및 웹 표준 기술 습득</li>
+                <li>TypeScript, JavaScript를 활용한 타입 안정성 확보</li>
+                <li>팀 프로젝트를 통해 협업 및 소통 방법론 경험</li>
               </ul>
             </div>
           </div>
@@ -185,12 +196,12 @@ export default function Resume() {
         <section className="mb-8 page-break-avoid">
           <h2 className="text-2xl font-bold mb-4 border-b border-gray-300 pb-2">Key Achievements</h2>
           <ul className="list-disc list-inside text-gray-800 space-y-2">
-            <li>App Store 출시 2개 앱 (Show(X), kip!) - 평점 5.0 유지</li>
+            <li>App Store 출시 팀 프로젝트 2개 앱 (Show(X), kip!) - 다운로드 200회 이상</li>
+            <li>App Store 출시 개인 프로젝트 2개 앱 (ReToU, DisplayCut) - 다운로드 100회 이상</li>
             <li>Apple Maps Indoor Map 국내 최초 승인 및 개발 사례 (Show(X))</li>
-            <li>Junction 2025 해커톤 참여 - AI 기반 산불 감지 시스템 개발</li>
+            <li>Junction 2025 해커톤 트랙 3등 - AI 기반 산불 감지 시스템 개발</li>
             <li>8개 iOS 앱 개발 경험 (SwiftUI 6개, UIKit 2개)</li>
             <li>웹에서 iOS로의 빠른 기술 전환 (선언형 UI 패턴 기반)</li>
-            <li>총 600+ commits의 활발한 개발 활동</li>
           </ul>
         </section>
 

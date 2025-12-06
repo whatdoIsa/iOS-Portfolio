@@ -6,23 +6,23 @@ export const projects = [
     type: 'SwiftUI',
     thumbnail: '/images/projects/showx.jpg',
     description: '쇼케이스 2025 전용 실내지도 앱. Apple Developer Academy 행사 참가자들을 위한 네비게이션 및 정보 제공 앱.',
-    techStack: ['SwiftUI', 'MapKit', 'Indoor Positioning', 'Localization'],
+    techStack: ['SwiftUI', 'MapKit', 'Swift Data','Indoor Positioning', 'Localization'],
     features: [
       '실내 지도 기반 부스 위치 및 동선 안내',
       '카테고리별 필터링으로 전시물 검색',
       '행사 일정, 팀 프로젝트 정보 통합 제공',
       '한국어/영어 다국어 지원',
-      'iOS 18.1+ 최신 기술 적용'
+      'App store 네비게이션 차트 37등'
     ],
-    webConnection: 'CSS Grid 레이아웃 경험을 SwiftUI LazyVGrid로 전환. 웹 지도 API 경험을 MapKit 학습에 활용.',
+    webConnection: '웹 지도 API 경험을 MapKit 학습에 활용.',
     github: 'https://github.com/DeveloperAcademy-POSTECH/2025-C6-M9-Indoor-Map',
     appstore: 'https://apps.apple.com/kr/app/showx/id6755496321',
     duration: '2025.09 - 2025.11',
     role: 'iOS Developer (팀 프로젝트 - 6인 / 개발 담당)',
     highlights: [
       'Problem: 쇼케이스 행사에서 200+ 명의 참가자들이 실내 동선, 부스 위치를 찾기 어려워 안내 인력에 부담이 커지고 행사 경험이 분산되는 문제가 있었다.',
-      'Action: MapKit Indoor Positioning API와 GeoJSON 기반 커스텀 오버레이로 층/존/부스 단위 데이터 모델링을 구현했다. 실내 지도 모듈 2,000+ LOC를 단독 개발하고, 검색 UX를 5회 반복 개선했으며, 기획자·디자이너 4명과 Figma 기반 협업으로 한국어/영어 Localization을 완성했다.',
-      'Result: 쇼케이스 기간 동안 현장 안내 문의 40% 감소, Apple Indoor Map 국내 최초 승인 획득. 5회 업데이트로 평점 5.0 유지하며 실내 내비게이션 도메인 전문성을 확보했다.'
+      'Action: MapKit Indoor Positioning API와 GeoJSON 기반 커스텀 오버레이로 층/존/부스 단위 데이터 모델링을 구현했다. 실내 지도 모듈을 SwiftUI로 단독 개발(전체 개발의 50% 담당)하고, 업데이트를 5회 반복 개선했으며, 기획자·디자이너 6명과 Figma 기반 협업으로 한국어/영어 Localization을 완성했다.',
+      'Result: 쇼케이스 기간 동안 현장 안내 문의 40% 감소, Apple Indoor Map 국내 최초 승인 획득. 5회 업데이트로 실내 내비게이션 도메인 전문성을 확보했다. App Store 네비게이션 차트 37등 달성.'
     ]
   },
   {
@@ -38,7 +38,7 @@ export const projects = [
       '온디바이스 AI로 날짜/시간/메모 자동 추출',
       '스마트 위치 인식 및 리마인더 알림',
       '개인정보 로컬 처리 (서버 전송 없음)',
-      'iOS 26.0+, Mac, Apple Vision 지원'
+      'App store 생산성 86등'
     ],
     webConnection: 'React의 컴포넌트 재사용성 개념을 SwiftUI View Modifier로 확장. 웹 UX 패턴을 네이티브 앱에 적용.',
     github: 'https://github.com/DeveloperAcademy-POSTECH/2025-C6-M9-TNT-Lab',
@@ -46,9 +46,9 @@ export const projects = [
     duration: '2025.09 - 2025.11',
     role: 'iOS Developer (팀 프로젝트 - 6인 / 개발 3인 중 1인)',
     highlights: [
-      'Problem: 테스트 사용자 15명의 평균 스크린샷 저장 개수 300+, 필요한 정보를 찾는 데 평균 5분 소요. 클라우드 AI는 개인정보 우려로 사용 거부율 70%.',
-      'Action: Apple Intelligence Writing Tools API와 Vision 프레임워크로 온디바이스 이미지 분류 파이프라인을 구현해 정확도 85% 달성. SwiftUI Combine으로 비동기 처리 최적화하고, 6인 개발팀 중 UI/UX 구현 70% 담당. CoreData 기반 로컬 저장으로 완전한 프라이버시 보장 아키텍처 설계.',
-      'Result: 테스트 사용자 평균 스크린샷 정리 시간 60% 단축 (5분 → 2분). "서버 전송 없어 안심된다" 만족도 95%. 평점 5.0 유지하며 온디바이스 AI 설계·성능·프라이버시 균형 감각 확보.'
+      'Problem: 테스트 사용자 15명의 평균 스크린샷 저장 개수 300+, 필요한 정보를 찾는 데 평균 5분 소요. 클라우드 AI는 개인정보 우려로 사용 거부율 70%. 저장해둔 정보를 수시로 잊고 놓친 경우가 68%',
+      'Action: Apple Intelligence Writing Tools API와 Vision 프레임워크로 온디바이스 이미지 분류 파이프라인을 구현해(전체 개발의 40% 담당) 정확도 85% 달성. SwiftUI Combine으로 비동기 처리 최적화. SwiftData 기반 로컬 저장으로 완전한 프라이버시 보장 아키텍처 설계.',
+      'Result: 테스트 사용자 평균 스크린샷 정리 시간 60% 단축 (5분 → 2분). "서버 전송 없어 안심된다" 만족도 95%. 온디바이스 AI 설계·성능·프라이버시 균형 감각 확보. Apple Intelligence 불가한 경우 대비 Gemini & GPT 도입. App Store 생산성 86등 달성.'
     ]
   },
   {
@@ -58,10 +58,10 @@ export const projects = [
     type: 'SwiftUI',
     thumbnail: '/images/projects/retou.jpg',
     description: '하루 한 줄 감정 회고 및 자기 성찰 iOS 앱. 일일 감정 기록으로 마음을 정리하는 웰빙 애플리케이션.',
-    techStack: ['SwiftUI', 'CoreData', 'Face ID', 'Charts'],
+    techStack: ['SwiftUI', 'Face ID', 'Charts'],
     features: [
       '하루 1회 회고 작성으로 꾸준한 기록 습관 형성',
-      '이모지 기반 감정 선택 및 커스텀 질문 템플릿',
+      '한국어와 영어 지원 다국어 기능',
       '월별 감정 통계 및 피드백 메시지 제공',
       'Face ID/암호 보안 기능',
       '라이트/다크 모드 지원 및 로컬 저장소 사용'
@@ -73,7 +73,7 @@ export const projects = [
     role: 'iOS Developer (개인 프로젝트)',
     highlights: [
       'Problem: 테스트 사용자 10명 중 8명이 "일기는 부담스러워 3일 이상 지속 못함", 감정 체크 앱은 "30일 후 이유를 떠올리지 못함"으로 이탈.',
-      'Action: "하루 1질문 + 감정 선택" 최소 입력 구조로 UX 설계해 평균 작성 시간 30초 달성. CoreData + Swift Charts로 날짜별·감정별 통계 시각화 구현. Face ID 보안과 로컬 저장으로 프라이버시 완전 보장. 테스트 사용자 피드백 3회 반영해 UI 개선.',
+      'Action: "하루 1질문 + 감정 선택" 최소 입력 구조로 UX 설계해(전체 개발의 100% 담당) 평균 작성 시간 30초로 부담감 없는 입력 경험 제공. Swift Charts로 날짜별·감정별 통계 시각화 구현. Face ID 보안과 로컬 저장으로 프라이버시 완전 보장. 테스트 사용자 피드백 3회 반영해 UI 개선.',
       'Result: 30일 지속률 70% 달성 (기존 일기 앱 대비 3배). "감정 패턴이 보인다" 만족도 85%. 로컬 데이터 기반 웰빙 앱 UX 설계·구현 경험 확보.'
     ]
   },
@@ -97,7 +97,7 @@ export const projects = [
     role: 'iOS Developer (개인 프로젝트)',
     highlights: [
       'Problem: 개발자 본인의 멀티 윈도우 작업 시 윈도우 배치에 하루 평균 15분 소요. Mission Control 사용률 20% 미만.',
-      'Action: SwiftUI + AppKit 기반 macOS 앱으로 6가지 레이아웃 프리셋(2분할, 3분할, 가운데 집중 등) 구현. Accessibility API로 현재 활성 윈도우를 1초 내 정확한 좌표·크기로 배치. 단축키 10개 설정으로 키보드만으로 완전 제어 가능하도록 설계.',
+      'Action: SwiftUI + AppKit 기반 macOS 앱으로 6가지 레이아웃 프리셋(2분할, 3분할, 가운데 집중 등) 구현(전체 개발의 100% 담당). Accessibility API로 현재 활성 윈도우를 1초 내 정확한 좌표·크기로 배치. 단축키 10개 설정으로 키보드만으로 완전 제어 가능하도록 설계.',
       'Result: 본인 사용 기준 윈도우 배치 시간 80% 감소 (15분 → 3분/일). macOS Accessibility API와 윈도우 관리 메커니즘 이해. SwiftUI 데스크톱 앱 설계·배포 경험 확보.'
     ]
   },
@@ -123,8 +123,8 @@ export const projects = [
     duration: '2025 (Junction Hackathon)',
     role: 'iOS Developer (팀 프로젝트 / 개발 담당)',
     highlights: [
-      'Problem: 경상북도 연평균 산불 발생 300+ 건, 정보 채널 5개 이상 분산으로 골든타임 평균 20분 지연.',
-      'Action: 48시간 해커톤에서 FIRMS 위성 데이터 + Azure AI + Korea Forest Service API 3개를 실시간 통합. MapKit으로 10km 반경 커뮤니티 알림 시스템 구현. SwiftUI + Combine으로 비동기 데이터 스트림 처리해 MVP 완성. 4인 팀에서 iOS 개발 100% 담당.',
+      'Problem: 경상북도 연평균 산불 발생 300+ 건, 정보 채널 5개 이상 분산으로 골든타임 평균 20분 지연. 최근 경북지역 산불로 인해 많은 인명 피해 발생',
+      'Action: 48시간 해커톤에서 FIRMS 위성 데이터 + Azure AI + Korea Forest Service API 3개를 실시간 통합. MapKit으로 10km 반경 커뮤니티 알림 시스템 구현(전체 iOS 개발의 100% 담당). SwiftUI + Combine으로 비동기 데이터 스트림 처리해 MVP 완성. 4인 팀에서 iOS 개발 60% 담당.',
       'Result: Junction 2025 해커톤 데모에서 "현장 적용 가능성" 멘토 피드백. 외부 API 3개를 48시간 내 통합하며 빠른 프로토타이핑과 데이터 파이프라인 설계 역량 확보.'
     ]
   },
@@ -148,9 +148,9 @@ export const projects = [
     duration: '2025.09',
     role: 'iOS Developer (팀 프로젝트 / 개발 담당)',
     highlights: [
-      'Problem: 테스트 사용자 12명의 평균 수면 시간 오전 2시, 자기 전 스마트폰 사용 평균 90분으로 수면 부족 발생.',
-      'Action: Screen Time API로 자정 이후 앱 사용 제한 기능 구현. Swift Charts로 일일/주간/월간 사용 패턴 시각화. 테스트 사용자 피드백 "강제 차단 스트레스"를 반영해 점진적 알림·제안 UX로 2회 개선. 4명 개발팀과 130+ commits 협업.',
-      'Result: 테스트 사용자 자정 이후 화면 사용 시간 45% 감소 (90분 → 50분). "그래프 보니 자제하게 된다" 만족도 80%. 행동 변화 유도 UX와 데이터 피드백 설계 경험 확보.'
+      'Problem: 테스트 사용자 12명의 평균 수면 시간 오전 2시, 자기 전 스마트폰 사용 평균 90분으로 수면 부족 발생. SNS/게임 등의 이유로 수면 시간이 점점 늦어지는 추세',
+      'Action: Screen Time API로 자정 이후 앱 사용 제한 기능 구현(전체 개발의 40% 담당). Swift Charts로 일일/주간/월간 사용 패턴 시각화. 테스트 사용자 피드백 "강제 차단 스트레스"를 반영해 점진적 알림·제안 UX로 2회 개선.',
+      'Result: 테스트 사용자 자정 이후 화면 사용 시간 45% 감소 (90분 → 50분). "NFC 태그로 스크린 잠금" 만족도 80%. 행동 변화 유도 UX와 데이터 피드백 설계 경험 확보.'
     ]
   },
   {
@@ -159,13 +159,11 @@ export const projects = [
     category: 'iOS',
     type: 'SwiftUI',
     thumbnail: '/images/projects/rootrip.jpg',
-    description: 'MapKit과 PencilKit을 이용한 여행 계획 및 생산성 앱. MVVM 아키텍처 기반 iOS 앱 개발.',
-    techStack: ['Swift', 'SwiftUI', 'MVVM', 'Firebase', 'Gitmoji'],
+    description: 'MapKit과 PencilKit을 이용한 여행 계획 및 생산성 앱. MVVM 아키텍처 기반 iPad OS 앱 개발.',
+    techStack: ['Swift', 'SwiftUI', 'UIKit', 'MVVM', 'Firebase', 'Gitmoji'],
     features: [
       'MVVM/MVC/Clean Architecture 적용',
       'Firebase 백엔드 통합',
-      '체계적인 Git 브랜치 전략 (main/dev/feature)',
-      'Gitmoji + Conventional Commits 컨벤션',
       '단위 테스트 및 UI 테스트 구현'
     ],
     webConnection: 'React의 컴포넌트 아키텍처 경험을 SwiftUI MVVM 패턴으로 확장. 프론트엔드 상태 관리 개념 활용.',
@@ -175,7 +173,7 @@ export const projects = [
     role: 'iOS Developer (팀 프로젝트 / 개발 담당)',
     highlights: [
       'Problem: 테스트 사용자 8명이 여행 계획 시 평균 3개 앱(지도/메모/일정) 전환으로 동선 파악에 20분 소요.',
-      'Action: MapKit + PencilKit 결합으로 지도 위 직접 드로잉 가능한 인터랙션 구현. StrokeData 모델 설계로 그리기 데이터 저장·복원. MVVM 아키텍처로 지도 상태/일정/북마크를 분리 설계하고, Firebase Firestore 연동으로 멀티 디바이스 동기화. 215+ commits로 체계적 개발 진행.',
+      'Action: MapKit + PencilKit 결합으로 지도 위 직접 드로잉 가능한 인터랙션 구현(전체 개발의 50% 담당). StrokeData 모델 설계로 그리기 데이터 저장·복원. MVVM 아키텍처로 지도 상태/일정/북마크를 분리 설계하고, Firebase Firestore 연동으로 멀티 디바이스 동기화.',
       'Result: 테스트 사용자 동선 계획 시간 60% 단축 (20분 → 8분). "지도 보며 직관적 계획" 만족도 90%. 복합 도메인(지도·드로잉·일정) 상태 관리와 Firebase 통합 경험 확보.'
     ]
   },
@@ -186,7 +184,7 @@ export const projects = [
     type: 'Swift',
     thumbnail: '/images/projects/waygym.jpg',
     description: '위치 기반 영역 점령 게임 앱. Apple Developer Academy @ POSTECH Challenge 3 프로젝트.',
-    techStack: ['Swift', 'MapKit', 'CoreLocation', 'Game Center'],
+    techStack: ['Swift', 'MapKit', 'CoreLocation'],
     features: [
       '실시간 위치 추적 및 영역 점령 메커니즘',
       '지도 기반 게이미피케이션',
@@ -197,10 +195,10 @@ export const projects = [
     github: 'https://github.com/DeveloperAcademy-POSTECH/2025-C3-M5-WAYGYM',
     appstore: null,
     duration: '2025.06 - 2025.07',
-    role: 'Project Manager (팀 프로젝트 - 3인 / PM 담당)',
+    role: 'Project Manager (팀 프로젝트 - 3인 / PM 및 디자인 담당)',
     highlights: [
-      'Problem: 테스트 사용자 10명의 주간 평균 운동 시간 30분, "운동 재미없음" 응답률 80%로 운동 시작 장벽 높음.',
-      'Action: CoreLocation + MapKit으로 걸은 영역을 실시간 색칠하는 영역 점령 메커니즘 구현. CLLocationManager로 배터리 소모 최적화 (위치 업데이트 주기 조정으로 40% 절감). Game Center API로 리더보드 구현. PM으로서 3인 팀 프로젝트 기획·관리하며 185+ commits 진행.',
+      'Problem: 테스트 사용자 1명의 주간 평균 운동 시간 30분, "운동 재미없음", "시간 부족", "게임 중독"으로 운동 시작 장벽 높음.',
+      'Action: CoreLocation + MapKit으로 걸은 영역을 실시간 색칠하는 영역 점령 메커니즘 구현(PM 및 디자인 담당). CLLocationManager로 배터리 소모 최적화 (위치 업데이트 주기 조정으로 40% 절감). PM 및 캐릭터 디자이너로서 6인 팀 프로젝트 기획·관리하며 캐릭터 디자인에 참여',
       'Result: 테스트 사용자 주간 이동 거리 평균 35% 증가. "게임하러 나간다" 만족도 85%. 헬스케어 도메인 게임화 UX와 배터리 최적화 경험 확보.'
     ]
   },
@@ -226,7 +224,7 @@ export const projects = [
     role: 'Full-stack Developer (개인 프로젝트)',
     highlights: [
       'Problem: 테스트 사용자 20명이 "분위기 좋은 카페 찾기" 위해 평균 3개 앱 사용, 검색 시간 평균 10분 소요.',
-      'Action: Kakao Map API 연동으로 현재 위치 기반 카페 검색·필터링 구현. TypeScript로 타입 안정성 확보하고, Remix.js + Prisma + SQLite로 풀스택 아키텍처 설계. 카페 리뷰 CRUD와 베스트 리뷰어 TOP 10 집계 로직 구현. Tailwind CSS로 모바일·데스크톱 반응형 UI 완성.',
+      'Action: Kakao Map API 연동으로 현재 위치 기반 카페 검색·필터링 구현(전체 개발의 100% 담당). TypeScript로 타입 안정성 확보하고, Remix.js + Prisma + SQLite로 풀스택 아키텍처 설계. 카페 리뷰 CRUD와 베스트 리뷰어 TOP 10 집계 로직 구현. Tailwind CSS로 모바일·데스크톱 반응형 UI 완성.',
       'Result: "지도+리뷰 통합으로 선택이 즐겁다" 만족도 85%. 이 프로젝트의 위치 기반 검색·지도 API 경험이 이후 iOS MapKit 프로젝트(Show(X), Rootrip) 개발의 직접적 기반이 됨.'
     ]
   },
@@ -251,7 +249,7 @@ export const projects = [
     role: 'Frontend Developer (개인 프로젝트)',
     highlights: [
       'Problem: React 학습 과정에서 컴포넌트 설계, 상태 관리, 라우팅을 실제 서비스 수준으로 연습할 프로젝트 필요.',
-      'Action: React + Vite + Tailwind CSS로 상품 목록·상세·장바구니·필터/정렬 기능 구현. 15+ 개 컴포넌트를 작은 단위로 분리해 재사용성 확보. useState/useContext로 전역 상태 관리 실습. Vercel 배포 자동화 설정.',
+      'Action: React + Vite + Tailwind CSS로 상품 목록·상세·장바구니·필터/정렬 기능 구현(전체 개발의 100% 담당). 15+ 개 컴포넌트를 작은 단위로 분리해 재사용성 확보. useState/useContext로 전역 상태 관리 실습. Vercel 배포 자동화 설정.',
       'Result: React 컴포넌트 기반 아키텍처와 상태 관리 개념을 실전 적용. 이 경험이 SwiftUI View 계층 구조와 @State/@ObservedObject 학습을 3배 가속화. 웹 선언형 UI 경험을 iOS로 자연스럽게 전환하는 기반 확보.'
     ]
   }
