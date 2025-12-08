@@ -15,7 +15,7 @@ export const projects = [
       'App store 네비게이션 차트 37등'
     ],
     webConnection: '웹 지도 API 경험을 MapKit 학습에 활용.',
-    github: 'https://github.com/DeveloperAcademy-POSTECH/2025-C6-M9-Indoor-Map',
+    github: null,
     appstore: 'https://apps.apple.com/kr/app/showx/id6755496321',
     duration: '2025.09 - 2025.11',
     role: 'iOS Developer (팀 프로젝트 - 6인 / 개발 담당)',
@@ -41,7 +41,7 @@ export const projects = [
       'App store 생산성 66등'
     ],
     webConnection: 'React의 컴포넌트 재사용성 개념을 SwiftUI View Modifier로 확장. 웹 UX 패턴을 네이티브 앱에 적용.',
-    github: 'https://github.com/DeveloperAcademy-POSTECH/2025-C6-M9-TNT-Lab',
+    github: null,
     appstore: 'https://apps.apple.com/kr/app/kip/id6754709167',
     duration: '2025.09 - 2025.11',
     role: 'iOS Developer (팀 프로젝트 - 6인 / 개발 3인 중 1인)',
