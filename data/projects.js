@@ -160,8 +160,9 @@ export const projects = [
     type: 'SwiftUI',
     thumbnail: '/images/projects/rootrip.jpg',
     description: 'MapKit과 PencilKit을 이용한 여행 계획 및 생산성 앱. MVVM 아키텍처 기반 iPad OS 앱 개발.',
-    techStack: ['Swift', 'SwiftUI', 'UIKit', 'MVVM', 'Firebase', 'Gitmoji'],
+    techStack: ['Swift', 'SwiftUI', 'UIKit', 'PencilKit', 'MapKit', 'MVVM', 'Firebase', 'Gitmoji'],
     features: [
+      'PencilKit + MapKit 통합 지도 드로잉 기능',
       'MVVM/MVC/Clean Architecture 적용',
       'Firebase 백엔드 통합',
       '단위 테스트 및 UI 테스트 구현'
@@ -173,7 +174,7 @@ export const projects = [
     role: 'iOS Developer (팀 프로젝트 / 개발 담당)',
     highlights: [
       'Problem: 테스트 사용자 8명이 여행 계획 시 평균 3개 앱(지도/메모/일정) 전환으로 동선 파악에 20분 소요.',
-      'Action: MapKit + PencilKit 결합으로 지도 위 직접 드로잉 가능한 인터랙션 구현(전체 개발의 50% 담당). StrokeData 모델 설계로 그리기 데이터 저장·복원. MVVM 아키텍처로 지도 상태/일정/북마크를 분리 설계하고, Firebase Firestore 연동으로 멀티 디바이스 동기화.',
+      'Action: MapKit + PencilKit 결합으로 지도 위 직접 드로잉 가능한 인터랙션 구현(PencilKit + MapKit 개발 담당). StrokeData 모델 설계로 그리기 데이터 저장·복원. MVVM 아키텍처로 지도 상태/일정/북마크를 분리 설계하고, Firebase Firestore 연동으로 멀티 디바이스 동기화.',
       'Result: 테스트 사용자 동선 계획 시간 60% 단축 (20분 → 8분). "지도 보며 직관적 계획" 만족도 90%. 복합 도메인(지도·드로잉·일정) 상태 관리와 Firebase 통합 경험 확보.'
     ]
   },

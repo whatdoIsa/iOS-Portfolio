@@ -5,7 +5,8 @@ import { projects } from '@/data/projects';
 import { useRef } from 'react';
 
 export default function Resume() {
-  const iosProjects = projects.filter(p => p.category === 'iOS').slice(0, 4);
+  // 모든 iOS 프로젝트들 포함
+  const iosProjects = projects.filter(p => p.category === 'iOS');
   const webProjects = projects.filter(p => p.category === 'Web');
   const resumeRef = useRef(null);
 
@@ -109,7 +110,7 @@ export default function Resume() {
           <div className="grid grid-cols-1 gap-3">
             <div>
               <span className="font-semibold">iOS Development:</span>
-              <span className="ml-2 text-gray-700">SwiftUI, UIKit, MapKit, Foundation Model, AppKit, Face ID, Swift Data, Apple Intelligence</span>
+              <span className="ml-2 text-gray-700">SwiftUI, UIKit, MapKit, PencilKit, Foundation Model, AppKit, Face ID, Swift Data, Apple Intelligence</span>
             </div>
             <div>
               <span className="font-semibold">Web Frontend:</span>
@@ -124,11 +125,11 @@ export default function Resume() {
 
         {/* Experience / Projects */}
         <section className="mb-8 page-break-before">
-          <h2 className="text-2xl font-bold mb-4 border-b border-gray-300 pb-2">Featured Projects</h2>
+          <h2 className="text-2xl font-bold mb-4 border-b border-gray-300 pb-2">Projects</h2>
 
           <div className="space-y-6">
-            {iosProjects.map((project, index) => (
-              <div key={project.id} className={`page-break-avoid ${index !== iosProjects.length - 1 ? 'border-b border-gray-200 pb-4' : ''}`}>
+            {[...iosProjects, ...webProjects].map((project, index) => (
+              <div key={project.id} className={`page-break-avoid ${index !== iosProjects.length + webProjects.length - 1 ? 'border-b border-gray-200 pb-4' : ''}`}>
                 <div className="flex justify-between items-start mb-2">
                   <h3 className="text-lg font-bold">{project.title}</h3>
                   <span className="text-sm text-gray-600">{project.duration}</span>
@@ -180,7 +181,8 @@ export default function Resume() {
               <p className="text-gray-700">Apple 생태계 관련 개발 집중 교육 프로그램</p>
               <ul className="list-disc list-inside text-sm text-gray-700 mt-2">
                 <li>6개의 Challenge 프로젝트 완성 (Show(X), kip!, Rootrip, WAY GYM 등)</li>
-                <li>SwiftUI, UIKit, MapKit, Apple Intelligence 활용 앱 개발</li>
+                <li>SwiftUI, UIKit, MapKit, PencilKit, Apple Intelligence 활용 앱 개발</li>
+                <li>Rootrip: PencilKit + MapKit 통합으로 지도 위 드로잉 인터랙션 개발 담당</li>
                 <li>팀 프로젝트 협업 및 Agile 개발 방법론 경험</li>
               </ul>
             </div>
