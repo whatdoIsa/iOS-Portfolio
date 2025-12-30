@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Print Styles for Resume */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  @page {
+    size: A4;
+    margin: 1.5cm;
+  }
+
+  .print\:hidden {
+    display: none !important;
+  }
+
+  .print\:bg-white {
+    background-color: white !important;
+  }
+
+  .print\:p-12 {
+    padding: 3rem !important;
+  }
+
+  .print\:pt-0 {
+    padding-top: 0 !important;
+  }
+
+  a {
+    text-decoration: none !important;
+    color: black !important;
+  }
+
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+  }
+}
+
+/* PDF Page Break Controls */
+.page-break-avoid {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.page-break-before {
+  page-break-before: always;
+  break-before: page;
+}
+
+.page-break-after {
+  page-break-after: always;
+  break-after: page;
+}
+
+/* iOS 스타일의 부드러운 스크롤 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 커스텀 스크롤바 (WebKit 브라우저용) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* 다크모드 기본 설정 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1C1C1E;
+    --foreground: #FFFFFF;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #2C2C2E;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #48484A;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #636366;
+  }
+}
+
+/* 기본 레이어 스타일 */
+@layer base {
+  body {
+    @apply bg-white dark:bg-ios-gray-900 text-ios-gray-900 dark:text-white;
+    @apply transition-colors duration-300;
+  }
+}
+
+/* 재사용 가능한 컴포넌트 스타일 */
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+
+  /* iOS 스타일 버튼 */
+  .btn-ios {
+    @apply px-6 py-3 rounded-full font-medium transition-all duration-300;
+    @apply hover:scale-105 active:scale-95;
+  }
+
+  .btn-primary {
+    @apply btn-ios bg-ios-blue text-white hover:bg-blue-600;
+  }
+
+  .btn-secondary {
+    @apply btn-ios bg-ios-gray-100 dark:bg-ios-gray-800 text-ios-gray-900 dark:text-white;
+    @apply hover:bg-ios-gray-200 dark:hover:bg-ios-gray-700;
+  }
+
+  /* 카드 스타일 */
+  .card-ios {
+    @apply bg-white dark:bg-ios-gray-800 rounded-2xl shadow-lg;
+    @apply transition-all duration-300 hover:shadow-xl;
+  }
+}
+
+/* 유틸리티 클래스 */
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r;
+  }
+
+  .gradient-ios {
+    @apply from-ios-blue via-ios-purple to-ios-pink;
+  }
+}

@@ -1,0 +1,428 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "compare": "Compare",
+    "projects": "Projects",
+    "contact": "Contact",
+    "resume": "Resume"
+  },
+  "hero": {
+    "title": {
+      "line1": "Web Frontend Experience",
+      "line2": "Accelerating iOS Development",
+      "suffix": ""
+    },
+    "subtitle": {
+      "line1": "Leveraging web frontend experience in declarative UI patterns,",
+      "line2": "I'm a T-shaped iOS developer specializing in SwiftUI and UIKit."
+    },
+    "intro": "Hello, I'm Dean (Jeong SongHeon).",
+    "values": {
+      "declarative": "Declarative UI Master",
+      "learning": "Fast Learning Ability",
+      "crossPlatform": "Cross-Platform Experience"
+    },
+    "buttons": {
+      "projects": "View Projects",
+      "compare": "View Code Comparison"
+    },
+    "scroll": "Scroll"
+  },
+  "skills": {
+    "title": "How Web Experience Accelerates iOS Development",
+    "subtitle": "More than just \"knowing both platforms\" —",
+    "subtitleHighlight": "web development experience significantly accelerates iOS learning",
+    "subtitleEnd": ".",
+    "categories": {
+      "ios": "iOS Development",
+      "web": "Web Frontend",
+      "tools": "Styling & Tools"
+    },
+    "transferTitle": "Web → iOS Knowledge Transfer Map",
+    "conclusionTitle": "What happens when a web developer learns iOS?",
+    "conclusionDescription": "With mastery of declarative UI patterns as a foundation,",
+    "conclusionHighlight": "the learning curve is reduced by over 50%",
+    "conclusionEnd": ".",
+    "stats": {
+      "webProjects": "Web Projects",
+      "iosApps": "iOS Apps",
+      "capability": "T-shaped Skills"
+    },
+    "insights": [
+      {
+        "webConcept": "Component-based thinking",
+        "iosApplication": "SwiftUI View structure design",
+        "impact": "Ability to design reusable View components"
+      },
+      {
+        "webConcept": "useState & useEffect",
+        "iosApplication": "@State, @Binding, @ObservedObject",
+        "impact": "Quick understanding of state management patterns"
+      },
+      {
+        "webConcept": "CSS Flexbox/Grid",
+        "iosApplication": "HStack, VStack, LazyVGrid",
+        "impact": "Intuitive transition in layout design"
+      },
+      {
+        "webConcept": "Props Drilling problem awareness",
+        "iosApplication": "Environment Objects utilization",
+        "impact": "Understanding the need for global state management"
+      },
+      {
+        "webConcept": "Responsive Design",
+        "iosApplication": "Adaptive Layout (iPad/iPhone)",
+        "impact": "Experience responding to various screen sizes"
+      },
+      {
+        "webConcept": "API communication (fetch/axios)",
+        "iosApplication": "URLSession & Async/Await",
+        "impact": "Same asynchronous data processing patterns"
+      }
+    ]
+  },
+  "compare": {
+    "title": "The Essence of Declarative UI is One",
+    "subtitle": "Compare React and SwiftUI code to see the similarities in core concepts.",
+    "description": "See how web frontend experience becomes a great advantage in iOS development.",
+    "react": "React (Web)",
+    "swiftui": "SwiftUI (iOS)",
+    "examples": {
+      "state": {
+        "title": "State Management",
+        "description": "React's useState and SwiftUI's @State share the same declarative UI philosophy.",
+        "insights": [
+          "useState ↔ @State: Similar state declaration patterns",
+          "setCount() ↔ count += 1: Identical state update patterns",
+          "UI Re-rendering automation: Both frameworks automatically reflect state changes"
+        ]
+      },
+      "props": {
+        "title": "Props & Parameters",
+        "description": "React's props and SwiftUI's parameters have identical data passing methods between components.",
+        "insights": [
+          "props ↔ parameters: Same data passing approach",
+          "destructuring ↔ property: Similar data access patterns",
+          "Reusability: Both frameworks maximize component reusability"
+        ]
+      },
+      "list": {
+        "title": "List Rendering",
+        "description": "React's map and SwiftUI's ForEach have very similar approaches to rendering lists.",
+        "insights": [
+          "map() ↔ ForEach: Identical array iteration and rendering",
+          "key ↔ id: Shared concept of unique identifiers for items",
+          "Performance optimization: Both frameworks support efficient list rendering"
+        ]
+      },
+      "conditional": {
+        "title": "Conditional Rendering",
+        "description": "React's conditional rendering and SwiftUI's if statements have the same logical structure.",
+        "insights": [
+          "Ternary operator ↔ if else: Identical conditional logic structure",
+          "&& operator ↔ if: Similar simple conditional rendering",
+          "State-based UI: Both frameworks support dynamic UI changes based on state"
+        ]
+      }
+    },
+    "conclusion": "If you have React experience, SwiftUI can be learned quickly.",
+    "labels": {
+      "react": "React (Web)",
+      "swiftui": "SwiftUI (iOS)",
+      "insights": "Key Insights"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Projects showcasing iOS and web development experience",
+    "categories": {
+      "all": "All",
+      "ios": "iOS",
+      "web": "Web",
+      "iOS": "iOS",
+      "Web": "Web"
+    },
+    "buttons": {
+      "appStore": "App Store",
+      "github": "GitHub",
+      "demo": "Demo",
+      "details": "View Details"
+    },
+    "webConnection": "Web Integration:",
+    "techStack": "Tech Stack",
+    "duration": "Duration",
+    "role": "Role",
+    "projectDescriptions": {
+      "Show(X)": "Indoor map app for Showcase 2025. Navigation and information app for Apple Developer Academy event participants.",
+      "kip!": "On-device AI-based screenshot auto-organization productivity app. Local AI processing with privacy protection.",
+      "ReToU (오늘의 넌)": "Smart daily routine and habit tracking app using SwiftUI's declarative UI patterns.",
+      "DisplayCut": "macOS window management utility app for enhanced productivity.",
+      "Rootrip": "Travel route planning app with PencilKit drawing integration on MapKit.",
+      "WAY GYM": "Gym workout tracking and management app for fitness enthusiasts.",
+      "MyLoveCoffee (myCafe)": "Location-based cafe search and review platform. Map-based web application using Kakao Map API.",
+      "React-shop": "React-based shopping mall project. Modern web development using Vite + Tailwind CSS."
+    },
+    "projectConnections": {
+      "Show(X)": "Applied web map API experience to MapKit learning.",
+      "kip!": "Extended React component reusability concept to SwiftUI View Modifier. Applied web UX patterns to native apps.",
+      "ReToU (오늘의 넌)": "Applied React state management patterns to SwiftUI data flow.",
+      "DisplayCut": "Utilized web development workflow knowledge for macOS app architecture.",
+      "Rootrip": "Combined web map interaction experience with native drawing capabilities.",
+      "WAY GYM": "Applied responsive web design principles to adaptive iOS layouts.",
+      "HOTSPOT": "Transitioned React real-time data processing experience to SwiftUI Combine. Applied web map API experience to MapKit utilization.",
+      "SleepTrain": "Transitioned React data visualization library experience to Swift Charts. Utilized state management patterns.",
+      "MyLoveCoffee (myCafe)": "Leveraged map and location-based search experience from this web project for iOS MapKit learning. Transitioned API communication patterns to URLSession.",
+      "React-shop": "Directly applied React component design experience to SwiftUI View structure. useState patterns accelerated @State learning."
+    },
+    "projectDetails": {
+      "Show(X)": {
+        "description": "Indoor map app for Showcase 2025. Navigation and information app for Apple Developer Academy event participants.",
+        "features": [
+          "Indoor map-based booth location and route guidance",
+          "Exhibition search with category-based filtering",
+          "Integrated event schedule and team project information",
+          "Korean/English multilingual support",
+          "App Store Navigation Chart #37"
+        ],
+        "highlights": [
+          "Problem: 200+ participants at Showcase event struggled with indoor navigation and booth locations, creating burden on guidance staff and dispersed event experience.",
+          "Action: Implemented floor/zone/booth level data modeling with MapKit Indoor Positioning API and GeoJSON-based custom overlays. Independently developed indoor map module in SwiftUI (handled 50% of total development), iterated 5 updates for improvement, and completed Korean/English localization through Figma-based collaboration with 6 planners and designers.",
+          "Result: 40% reduction in on-site guidance inquiries during Showcase period, achieved Korea's first approval for Apple Indoor Map. Secured indoor navigation domain expertise through 5 updates. Achieved App Store Navigation Chart #37."
+        ],
+        "role": "iOS Developer (Team Project - 6 people / Development Lead)",
+        "duration": "2025.09 - 2025.11"
+      },
+      "kip!": {
+        "description": "On-device AI-based screenshot auto-organization productivity app. Local AI processing with privacy protection.",
+        "features": [
+          "Quick save with Share Sheet integration",
+          "Automatic date/time/memo extraction with on-device AI",
+          "Smart location recognition and reminder notifications",
+          "Local personal data processing (no server transmission)",
+          "App Store Productivity #66"
+        ],
+        "highlights": [
+          "Problem: 15 test users averaged 300+ saved screenshots, taking average 5 minutes to find needed information. Cloud AI had 70% rejection rate due to privacy concerns. 68% frequently forgot and missed saved information.",
+          "Action: Implemented on-device image classification pipeline with Apple Intelligence Writing Tools API and Vision framework (handled 40% of total development) achieving 85% accuracy. Optimized asynchronous processing with SwiftUI Combine. Designed complete privacy-assured architecture with SwiftData-based local storage.",
+          "Result: 60% reduction in screenshot organization time for test users (5min → 2min). 95% satisfaction with \"no server transmission, feels secure\". Secured balance between on-device AI design, performance, and privacy. Introduced Gemini & GPT for Apple Intelligence unavailable cases. Achieved App Store Productivity #66."
+        ],
+        "role": "iOS Developer (Team Project - 6 people / 1 of 3 developers)",
+        "duration": "2025.09 - 2025.11"
+      },
+      "ReToU (오늘의 넌)": {
+        "description": "Daily one-line emotional reflection and self-reflection iOS app. Wellbeing application for organizing mind through daily emotional records.",
+        "features": [
+          "Consistent recording habit formation with once-daily reflection",
+          "Multilingual support for Korean and English",
+          "Monthly emotional statistics and feedback messages",
+          "Face ID/password security features",
+          "Light/dark mode support and local storage"
+        ],
+        "highlights": [
+          "Problem: 8 out of 10 test users \"couldn't sustain diary writing for more than 3 days due to burden\", emotion check apps led to dropout with \"can't recall reasons after 30 days\".",
+          "Action: Designed UX with minimal input structure of \"daily 1 question + emotion selection\" (handled 100% of development) providing burden-free input experience with average 30-second writing time. Implemented date-wise and emotion-wise statistical visualization with Swift Charts. Ensured complete privacy with Face ID security and local storage. Reflected test user feedback 3 times for UI improvements.",
+          "Result: Achieved 70% 30-day retention rate (3x compared to existing diary apps). 85% satisfaction with \"can see emotional patterns\". Secured local data-based wellbeing app UX design and implementation experience."
+        ],
+        "role": "iOS Developer (Personal Project)",
+        "duration": "2025.04 - 2025.06"
+      },
+      "DisplayCut": {
+        "description": "macOS window management utility app for enhanced productivity.",
+        "features": [
+          "6 layout presets (split-half, split-third, center focus, etc.)",
+          "Precise window positioning with Accessibility API",
+          "Complete keyboard control with 10 shortcuts",
+          "Fast 1-second window arrangement"
+        ],
+        "highlights": [
+          "Problem: Developer personally spent average 15 minutes daily on window arrangement during multi-window work. Mission Control usage below 20%.",
+          "Action: Implemented 6 layout presets (split-half, split-third, center focus, etc.) with SwiftUI + AppKit-based macOS app (handled 100% of development). Positioned active windows with precise coordinates and sizes within 1 second using Accessibility API. Designed complete keyboard-only control with 10 shortcut settings.",
+          "Result: 80% reduction in window arrangement time based on personal usage (15min → 3min/day). Understanding of macOS Accessibility API and window management mechanisms. Secured SwiftUI desktop app design and deployment experience."
+        ],
+        "role": "iOS Developer (Personal Project)",
+        "duration": "2025.06 - 2025.08"
+      },
+      "HOTSPOT": {
+        "description": "AI-based wildfire early detection and community alert system. Junction 2025 hackathon project combining citizen reports with AI predictions for wildfire response.",
+        "features": [
+          "Instant camera launch for swift wildfire reporting",
+          "10km radius automatic community alert system",
+          "3-level evacuation guide (immediate/prepare/monitor)",
+          "Radar-style wildfire proximity visualization",
+          "Shelter location guidance and map app integration",
+          "AI accuracy improvement (regional risk index + satellite data)"
+        ],
+        "highlights": [
+          "Problem: 300+ annual wildfire incidents in Gyeongsangbuk-do, average 20-minute golden time delay due to information scattered across 5+ channels. Recent wildfires in Gyeongbuk region caused significant casualties.",
+          "Action: Real-time integration of 3 sources: FIRMS satellite data + Azure AI + Korea Forest Service API during 48-hour hackathon. Implemented 10km radius community alert system with MapKit (handled 100% of iOS development). Completed MVP with SwiftUI + Combine asynchronous data stream processing. Handled 60% of iOS development in 4-person team.",
+          "Result: \"Field applicability\" mentor feedback at Junction 2025 hackathon demo. Secured rapid prototyping and data pipeline design capabilities by integrating 3 external APIs within 48 hours."
+        ],
+        "role": "iOS Developer (Team Project / Development Lead)",
+        "duration": "2025 (Junction Hackathon)"
+      },
+      "SleepTrain": {
+        "description": "Screen time sleep induction application. Sleep induction app through screen time enforcement.",
+        "features": [
+          "Daily/weekly/monthly screen time tracking",
+          "App-specific usage time analysis and visualization",
+          "Insights for usage habit improvement",
+          "Goal setting and notification features"
+        ],
+        "highlights": [
+          "Problem: 12 test users averaged 2 AM sleep time, 90-minute smartphone usage before bed causing sleep deprivation. Increasingly late sleep times due to SNS/games.",
+          "Action: Implemented app usage restriction after midnight with Screen Time API (handled 40% of development). Visualized daily/weekly/monthly usage patterns with Swift Charts. Improved UX twice with gradual notification and suggestion approach reflecting test user feedback about \"forced blocking stress\".",
+          "Result: 45% reduction in screen usage after midnight for test users (90min → 50min). 80% satisfaction with \"NFC tag screen lock\". Secured behavioral change induction UX and data feedback design experience."
+        ],
+        "role": "iOS Developer (Team Project / Development Lead)",
+        "duration": "2025.09"
+      },
+      "Rootrip": {
+        "description": "Travel planning and productivity app using MapKit and PencilKit. iPad OS app development based on MVVM architecture.",
+        "features": [
+          "PencilKit + MapKit integrated map drawing functionality",
+          "MVVM/MVC/Clean Architecture application",
+          "Firebase backend integration",
+          "Unit testing and UI testing implementation"
+        ],
+        "highlights": [
+          "Problem: 8 test users spent 20 minutes understanding routes by switching between average 3 apps (map/memo/schedule) when planning trips.",
+          "Action: Implemented direct drawing interaction on maps by combining MapKit + PencilKit (handled PencilKit + MapKit development). Designed StrokeData model for drawing data save/restore. Separated map state/schedule/bookmarks with MVVM architecture, achieved multi-device sync with Firebase Firestore integration.",
+          "Result: 60% reduction in route planning time for test users (20min → 8min). 90% satisfaction with \"intuitive planning while viewing map\". Secured complex domain (map, drawing, schedule) state management and Firebase integration experience."
+        ],
+        "role": "iOS Developer (Team Project / Development Lead)",
+        "duration": "2025.07 - 2025.08"
+      },
+      "WAY GYM": {
+        "description": "Location-based territory conquest game app. Apple Developer Academy @ POSTECH Challenge 3 project.",
+        "features": [
+          "Real-time location tracking and territory conquest mechanism",
+          "Map-based gamification",
+          "User competition and ranking system",
+          "Territory expansion strategy gameplay"
+        ],
+        "highlights": [
+          "Problem: 1 test user averaged 30 minutes weekly exercise time, high exercise barriers due to \"exercise is boring\", \"lack of time\", \"game addiction\".",
+          "Action: Implemented real-time territory coloring mechanism for walked areas with CoreLocation + MapKit (handled PM and design). Optimized battery consumption with CLLocationManager (40% reduction through location update cycle adjustment). Participated in character design while managing 6-person team project as PM and character designer.",
+          "Result: 35% average increase in weekly movement distance for test users. 85% satisfaction with \"going out to play games\". Secured healthcare domain gamification UX and battery optimization experience."
+        ],
+        "role": "Project Manager (Team Project - 3 people / PM and Design Lead)",
+        "duration": "2025.06 - 2025.07"
+      },
+      "MyLoveCoffee (myCafe)": {
+        "description": "Location-based cafe search and review platform. Map-based web application using Kakao Map API.",
+        "features": [
+          "Current location-based nearby cafe search and filtering",
+          "Cafe review writing/editing and Best Reviewer TOP 10 selection",
+          "Kakao Mobility API integration for car navigation",
+          "Nationwide regional cafe search functionality",
+          "Remix.js + Prisma + SQLite full-stack implementation"
+        ],
+        "highlights": [
+          "Problem: 20 test users used average 3 apps for \"finding atmospheric cafes\", spending average 10 minutes on search time.",
+          "Action: Implemented current location-based cafe search and filtering with Kakao Map API integration (handled 100% of development). Secured type safety with TypeScript and designed full-stack architecture with Remix.js + Prisma + SQLite. Implemented cafe review CRUD and Best Reviewer TOP 10 aggregation logic. Completed mobile/desktop responsive UI with Tailwind CSS.",
+          "Result: 85% satisfaction with \"map + review integration makes selection enjoyable\". Location-based search and map API experience from this project became direct foundation for subsequent iOS MapKit projects (Show(X), Rootrip)."
+        ],
+        "role": "Full-stack Developer (Personal Project)",
+        "duration": "2024.06"
+      },
+      "React-shop": {
+        "description": "React-based shopping mall project. Modern web development using Vite + Tailwind CSS.",
+        "features": [
+          "React component-based shopping mall UI",
+          "Fast development environment using Vite",
+          "Responsive design implementation with Tailwind CSS",
+          "Vercel deployment automation"
+        ],
+        "highlights": [
+          "Problem: Needed project to practice component design, state management, and routing at actual service level during React learning.",
+          "Action: Implemented product list, detail, cart, filter/sort functionality with React + Vite + Tailwind CSS (handled 100% of development). Secured reusability by separating 15+ components into small units. Practiced global state management with useState/useContext. Set up Vercel deployment automation.",
+          "Result: Applied React component-based architecture and state management concepts in practice. This experience accelerated SwiftUI View hierarchical structure and @State/@ObservedObject learning by 3x. Secured foundation for naturally transitioning web declarative UI experience to iOS."
+        ],
+        "role": "Frontend Developer (Personal Project)",
+        "duration": "2024.04"
+      }
+    },
+    "emphasisText": "React/Vue.js experience is integrated into all iOS projects"
+  },
+  "contact": {
+    "title": "Ready to work together?",
+    "description": {
+      "line1": "Partner with a T-shaped developer who brings web expertise to iOS development.",
+      "line2": "Open to new opportunities and exciting collaborations."
+    },
+    "buttons": {
+      "email": "Send Email",
+      "github": "View GitHub"
+    }
+  },
+  "resume": {
+    "title": "Jeong SongHeon (Dean)",
+    "subtitle": "iOS Developer Creating Apps That Seamlessly Integrate into Daily Life",
+    "download": "Save as PDF",
+    "downloadHint": "Click to download PDF file immediately",
+    "sections": {
+      "summary": "Summary",
+      "skills": "Technical Skills",
+      "projects": "Projects",
+      "education": "Education & Training",
+      "achievements": "Key Achievements"
+    },
+    "summary": {
+      "text1": "Began web frontend development in 2024, completing React/TypeScript full-stack projects before transitioning to iOS development through Apple Developer Academy @POSTECH in 2025. Published 4 apps on the App Store within 6 months (2 personal, 2 team projects), with a total portfolio of 8 iOS apps and 2 web projects.",
+      "text2": "Key Achievements: 8 iOS apps developed with SwiftUI and UIKit | First approved Apple Indoor Map implementation in Korea | macOS window management service development | On-device AI and location-based service implementation"
+    },
+    "skillCategories": {
+      "ios": "iOS Development:",
+      "web": "Web Frontend:",
+      "tools": "Styling & Tools:"
+    },
+    "education": [
+      {
+        "name": "Silla University, Computer Education",
+        "period": "2019.03 ~ 2025.02",
+        "description": "Bachelor's Degree | GPA: 3.45/4.5"
+      },
+      {
+        "name": "Apple Developer Academy @ POSTECH",
+        "period": "2025.03 ~ 2025.12",
+        "description": "Intensive education program for Apple ecosystem development",
+        "details": [
+          "Completed 6 Challenge projects (Show(X), kip!, Rootrip, WAY GYM, etc.)",
+          "App development using SwiftUI, UIKit, MapKit, PencilKit, Apple Intelligence",
+          "Rootrip: Responsible for developing map drawing interactions integrating PencilKit + MapKit",
+          "Experience in team project collaboration and Agile development methodology"
+        ]
+      },
+      {
+        "name": "Zerobase Frontend School",
+        "period": "2024.02 ~ 2024.09",
+        "description": "React, TypeScript-based web development education",
+        "details": [
+          "Learned React component-based architecture",
+          "Secured type safety using TypeScript and JavaScript",
+          "Experienced collaboration and communication methodologies through team projects"
+        ]
+      }
+    ],
+    "contact": {
+      "location": "Pohang, South Korea"
+    },
+    "achievements": [
+      "Published 2 team project apps on App Store (Show(X), kip!) - Over 200 downloads",
+      "Published 2 personal project apps on App Store (ReToU, DisplayCut) - Over 100 downloads",
+      "First domestic approval and development case of Apple Maps Indoor Map (Show(X))",
+      "3rd place in Junction 2025 hackathon track - AI-based wildfire detection system development",
+      "Experience developing 8 iOS apps (6 SwiftUI, 2 UIKit)",
+      "Fast technology transition from web to iOS (based on declarative UI patterns)"
+    ],
+    "footer": {
+      "portfolio": "Portfolio:",
+      "downloadDescription": "Click the \"Save as PDF\" button in the top right to download the PDF file immediately."
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Jung Song-Heon (Dean). All rights reserved.",
+    "madeWith": "Built with Next.js"
+  }
+}
